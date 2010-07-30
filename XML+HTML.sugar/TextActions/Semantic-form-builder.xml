@@ -1,0 +1,281 @@
+<?xml version="1.0"?>
+<action-recipes>
+
+	<!-- Semantic form building blocks --> 
+	
+	<snippet id="com.semanticform.snippets" category="hidden">
+		<title>Stacked form</title>
+		<text><![CDATA[<form action="#" method="post" class="stacked">
+	<fieldset>
+		<legend class="hide-1">${1:Form legend text}</legend>
+		
+		<div class="form-block">
+			<label for="${2:text-example}">
+				<span class="label">
+					${3:Label for text input}
+				</span>
+				<span class="input">
+					<input type="text" name="$2" id="$2" class="text" />
+				</span>
+			</label>
+		</div><!-- / .form-block -->
+		
+		$0
+		
+	</fieldset>
+</form>]]></text>
+		<syntax-context>html, html *</syntax-context>
+		<text-trigger>sform</text-trigger>
+	</snippet>
+		
+	<snippet id="com.semanticform.snippets" category="hidden">
+		<title>Left-aligned form</title>
+		<text><![CDATA[<form action="#" method="post" class="left-aligned">
+	<fieldset>
+		<legend class="hide-1">${1:Form legend text}</legend>
+		
+		<div class="form-block">
+			<label for="${2:text-example}">
+				<span class="label">
+					${3:Label for text input}
+				</span>
+				<span class="input">
+					<input type="text" name="$2" id="$2" class="text" />
+				</span>
+			</label>
+		</div><!-- / .form-block -->
+		
+		$0
+		
+	</fieldset>
+</form>]]></text>
+		<syntax-context>html, html *</syntax-context>
+		<text-trigger>sform la</text-trigger>
+	</snippet>
+		
+	<snippet id="com.semanticform.snippets" category="hidden">
+		<title>Right-aligned form</title>
+		<text><![CDATA[<form action="#" method="post" class="right-aligned">
+	<fieldset>
+		<legend class="hide-1">${1:Form legend text}</legend>
+		
+		<div class="form-block">
+			<label for="${2:text-example}">
+				<span class="label">
+					${3:Label for text input}
+				</span>
+				<span class="input">
+					<input type="text" name="$2" id="$2" class="text" />
+				</span>
+			</label>
+		</div><!-- / .form-block -->
+		
+		$0
+		
+	</fieldset>
+</form>]]></text>
+		<syntax-context>html, html *</syntax-context>
+		<text-trigger>sform ra</text-trigger>
+	</snippet>
+		
+	<snippet id="com.semanticform.snippets" category="hidden">
+		<title>Text input</title>
+		<text><![CDATA[<div class="form-block">
+	<label for="${1:text-example}">
+		<span class="label">
+			${2:Label for text input}
+		</span>
+		<span class="input">
+			<input type="text" name="$1" id="$1" class="text" />
+		</span>
+	</label>
+</div><!-- / .form-block -->
+
+$0]]></text>
+		<syntax-context>html, html *</syntax-context>
+		<text-trigger>text-input</text-trigger>
+	</snippet>
+		
+	<snippet id="com.semanticform.snippets" category="hidden">
+		<title>Textarea</title>
+		<text><![CDATA[<div class="form-block">
+	<label for="${1:textarea-example}">
+		<span class="label">
+			${2:Label for textarea}
+		</span>
+		<span class="input">
+			<textarea name="$1" id="$1" class="text" rows="${3:number of rows}" cols="${4:number of columns}"></textarea>
+		</span>
+	</label>
+</div><!-- / .form-block -->
+
+$0]]></text>
+		<syntax-context>html, html *</syntax-context>
+		<text-trigger>textarea</text-trigger>
+	</snippet>
+	
+	<snippet id="com.semanticform.snippets" category="hidden">
+		<title>Radio group</title>
+		<text><![CDATA[<div class="form-block radio-group">
+	<fieldset>
+		<legend class="hide-1">${1:Form legend text}</legend>
+		
+		<span class="label">
+			${2:Label for radio group}
+		</span>
+		
+		<div class="form-block">
+			<label for="${3:radio-label-1}">
+				<span class="input">
+					<input type="radio" name="${4:radio-group-name}" id="$3" />
+				</span>
+				<span class="label">
+					${5:Radio label}
+				</span>
+			</label>
+		</div><!-- / .form-block -->
+		
+		<div class="form-block">
+			<label for="${6:radio-label-2}">
+				<span class="input">
+					<input type="radio" name="$4" id="$6" />
+				</span>
+				<span class="label">
+					${7:Radio label}
+				</span>
+			</label>
+		</div><!-- / .form-block -->
+		
+		$0
+		
+	</fieldset>	
+</div><!-- / .form-block.checkbox-group -->
+
+]]></text>
+		<syntax-context>html, html *</syntax-context>
+		<text-trigger>radio-group</text-trigger>
+	</snippet>
+	
+	<snippet id="com.semanticform.snippets" category="hidden">
+		<title>Radio button</title>
+		<text><![CDATA[<div class="form-block">
+	<label for="${1:radio-label}">
+		<span class="input">
+			<input type="radio" name="${2:radio-group-name}" id="$1" />
+		</span>
+		<span class="label">
+			${3:Radio label}
+		</span>
+	</label>
+</div><!-- / .form-block -->
+
+$0]]></text>
+		<syntax-context>html, html *</syntax-context>
+		<text-trigger>radio-button</text-trigger>
+	</snippet>
+	
+	<snippet id="com.semanticform.snippets" category="hidden">
+		<title>Checkbox group</title>
+		<text><![CDATA[<div class="form-block checkbox-group">
+	<fieldset>
+		<legend class="hide-1">${1:Form legend text}</legend>
+		
+		<span class="label">
+			${2:Label for checkbox group}
+		</span>
+		
+		<div class="form-block">
+			<label for="${3:checkbox-label-1}">
+				<span class="input">
+					<input type="checkbox" name="${4:checkbox-group-name}" id="$3" />
+				</span>
+				<span class="label">
+					${5:Checkbox label}
+				</span>
+			</label>
+		</div><!-- / .form-block -->
+		
+		<div class="form-block">
+			<label for="${6:checkbox-label-2}">
+				<span class="input">
+					<input type="checkbox" name="$4" id="$6" />
+				</span>
+				<span class="label">
+					${7:Checkbox label}
+				</span>
+			</label>
+		</div><!-- / .form-block -->
+		
+		$0
+		
+	</fieldset>	
+</div><!-- / .form-block.checkbox-group -->
+
+]]></text>
+		<syntax-context>html, html *</syntax-context>
+		<text-trigger>checkbox-group</text-trigger>
+	</snippet>
+	
+	<snippet id="com.semanticform.snippets" category="hidden">
+		<title>Checkbox</title>
+		<text><![CDATA[<div class="form-block">
+	<label for="${1:checkbox-label}">
+		<span class="input">
+			<input type="checkbox" name="${2:checkbox-group-name}" id="$1" />
+		</span>
+		<span class="label">
+			${3:Checkbox label}
+		</span>
+	</label>
+</div><!-- / .form-block -->
+
+$0]]></text>
+		<syntax-context>html, html *</syntax-context>
+		<text-trigger>checkbox</text-trigger>
+	</snippet>
+	
+	<snippet id="com.semanticform.snippets" category="hidden">
+		<title>Select group</title>
+		<text><![CDATA[<div class="form-block">
+	<label for="${1:select-box-label}">
+		<span class="label">
+			${2:Option label text}
+		</span>
+		<span class="input">
+			<select name="$1" id="$1">
+				<option>${3:Option text}</option>
+				<option>${4:Option text}</option>
+				<option>${5:Option text}</option>
+				<option>${6:Option text}</option>
+				<option>${7:Option text}</option>
+			</select>
+		</span>
+	</label>
+</div><!-- / .form-block -->
+
+$0]]></text>
+		<syntax-context>html, html *</syntax-context>
+		<text-trigger>select-group</text-trigger>
+	</snippet>
+		
+	<snippet id="com.semanticform.snippets" category="hidden">
+		<title>Submit button</title>
+		<text><![CDATA[<div class="form-block">
+	<input type="submit" value="${1:Submit form}" class="button" />
+</div><!-- / .form-block -->]]></text>
+		<syntax-context>html, html *</syntax-context>
+		<text-trigger>submit</text-trigger>
+	</snippet>
+	
+	<snippet id="com.semanticform.snippets" category="hidden">
+		<title>Helper</title>
+		<text><![CDATA[<span class="status">
+	$0
+</span>]]></text>
+		<syntax-context>html, html *</syntax-context>
+		<text-trigger>helper</text-trigger>
+	</snippet>
+		
+	<!-- / Semantic form building blocks -->
+	
+</action-recipes>
