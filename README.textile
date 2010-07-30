@@ -1,0 +1,33 @@
+h2. Semantic Form Builder
+
+To build the foundations of the form, firstly decide whether you require a stacked form (labels on top of inputs), left-aligned or right-aligned labels. Once chosen, type the corresponding command:
+
+* sform[tab] - Stacked
+* sform la[tab] - Left-aligned
+* sform ra[tab] - Right-aligned
+
+This will output the following code:
+
+@
+
+<form action="#" method="post" class="stacked">
+	<fieldset>
+		<legend class="hide-1">Form legend text</legend>
+		
+		<div class="form-block">
+			<label for="text-example">
+				<span class="label">
+					Label for text input
+				</span>
+				<span class="input">
+					<input type="text" name="text-example" id="text-example" class="text" />
+				</span>
+			</label>
+		</div><!-- / .form-block -->
+		
+		
+		
+	</fieldset>
+</form>
+
+@
