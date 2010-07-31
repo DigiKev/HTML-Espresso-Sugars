@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<action-recipes>
+
+	<snippet id="com.lists.snippets" category="hidden">
+		<title>Unordered list</title>
+		<text><![CDATA[<ul>
+	<li></li>
+	<li></li>
+</ul>]]></text>
+		<syntax-context>html, html *</syntax-context>
+		<text-trigger><![CDATA[<ul>]]></text-trigger>
+	</snippet>
+	
+	<snippet id="com.lists.snippets" category="hidden">
+		<title>Ordered list</title>
+		<text><![CDATA[<ol>
+	<li></li>
+	<li></li>
+</ol>]]></text>
+		<syntax-context>html, html *</syntax-context>
+		<text-trigger><![CDATA[<ol>]]></text-trigger>
+	</snippet>
+	
+	<snippet id="com.lists.snippets" category="hidden">
+		<title>Definition list</title>
+		<text><![CDATA[<dl>
+
+	<dt></dt>
+	<dd></dd>
+	
+	<dt></dt>
+	<dd></dd>
+	
+</dl>]]></text>
+		<syntax-context>html, html *</syntax-context>
+		<text-trigger><![CDATA[<dl>]]></text-trigger>
+	</snippet>
+	
+</action-recipes>
