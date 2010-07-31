@@ -145,7 +145,7 @@ This will output the following code:
 		<div class="form-block">
 			<label for="checkbox-label-1">
 				<span class="input">
-					<input type="checkbox" name="checkbox-group-name" id="checkbox-label-1" />
+					<input type="checkbox" name="checkbox-label-1" id="checkbox-label-1" />
 				</span>
 				<span class="label">
 					Checkbox label
@@ -156,7 +156,7 @@ This will output the following code:
 		<div class="form-block">
 			<label for="checkbox-label-2">
 				<span class="input">
-					<input type="checkbox" name="checkbox-group-name" id="checkbox-label-2" />
+					<input type="checkbox" name="checkbox-label-2" id="checkbox-label-2" />
 				</span>
 				<span class="label">
 					Checkbox label
@@ -180,7 +180,7 @@ This will output the following code:
 <pre><code><div class="form-block">
 	<label for="checkbox-label">
 		<span class="input">
-			<input type="checkbox" name="checkbox-group-name" id="checkbox-label" />
+			<input type="checkbox" name="checkbox-label" id="checkbox-label" />
 		</span>
 		<span class="label">
 			Checkbox label

@@ -187,21 +187,21 @@ $0]]></text>
 		<div class="form-block">
 			<label for="${3:checkbox-label-1}">
 				<span class="input">
-					<input type="checkbox" name="${4:checkbox-group-name}" id="$3" />
+					<input type="checkbox" name="$3" id="$3" />
 				</span>
 				<span class="label">
-					${5:Checkbox label}
+					${4:Checkbox label}
 				</span>
 			</label>
 		</div><!-- / .form-block -->
 		
 		<div class="form-block">
-			<label for="${6:checkbox-label-2}">
+			<label for="${5:checkbox-label-2}">
 				<span class="input">
-					<input type="checkbox" name="$4" id="$6" />
+					<input type="checkbox" name="$5" id="$5" />
 				</span>
 				<span class="label">
-					${7:Checkbox label}
+					${6:Checkbox label}
 				</span>
 			</label>
 		</div><!-- / .form-block -->
@@ -221,10 +221,10 @@ $0]]></text>
 		<text><![CDATA[<div class="form-block">
 	<label for="${1:checkbox-label}">
 		<span class="input">
-			<input type="checkbox" name="${2:checkbox-group-name}" id="$1" />
+			<input type="checkbox" name="$1" id="$1" />
 		</span>
 		<span class="label">
-			${3:Checkbox label}
+			${2:Checkbox label}
 		</span>
 	</label>
 </div><!-- / .form-block -->
