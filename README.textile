@@ -29,3 +29,39 @@ This will output the following code:
 </form></code></pre>
 
 The form builder has various tab stops. The first in the above code selects the text 'Form legend text'. Over type the legend text with your own, and then press [tab]. The next available tab stop is the 'for' attribute of the label tag. Editing this will also change the text to the same as typed in the input attributes, 'name' and 'ID'. [tab] again, and the next stop is the text region within <code><span class="label"></code>. A final [tab] brings the typing carat to the space after the 'form-block', ready to add further form elements.
+
+h3. Adding further text inputs
+
+To add further text inputs, type text-input[tab]
+
+This will output the following code:
+
+<pre><code><div class="form-block">
+	<label for="text-example">
+		<span class="label">
+			Label for text input
+		</span>
+		<span class="input">
+			<input type="text" name="text-example" id="text-example" class="text" />
+		</span>
+	</label>
+</div><!-- / .form-block --></code></pre>
+
+h3. Adding textarea inputs
+
+To add textarea inputs, type textarea[tab]
+
+This will output the following code:
+
+<pre><code><div class="form-block">
+	<label for="textarea-example">
+		<span class="label">
+			Label for textarea
+		</span>
+		<span class="input">
+			<textarea name="textarea-example" id="textarea-example" class="text" rows="number of rows" cols="number of columns"></textarea>
+		</span>
+	</label>
+</div><!-- / .form-block --></code></pre>
+
+The tab stops are very similar to the text input tab stops, with the addition of 'row' and 'cols' attributes.
