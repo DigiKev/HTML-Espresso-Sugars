@@ -65,3 +65,65 @@ This will output the following code:
 </div><!-- / .form-block --></code></pre>
 
 The tab stops are very similar to the text input tab stops, with the addition of 'row' and 'cols' attributes.
+
+h3. Adding radio button groups
+
+To add a radio button group, type radio-group[tab]
+
+This will output the following code:
+
+<pre><code><div class="form-block radio-group">
+	<fieldset>
+		<legend class="hide-1">Form legend text</legend>
+		
+		<span class="label">
+			Label for radio group
+		</span>
+		
+		<div class="form-block">
+			<label for="radio-label-1">
+				<span class="input">
+					<input type="radio" name="radio-group-name" id="radio-label-1" />
+				</span>
+				<span class="label">
+					Radio label
+				</span>
+			</label>
+		</div><!-- / .form-block -->
+		
+		<div class="form-block">
+			<label for="radio-label-2">
+				<span class="input">
+					<input type="radio" name="radio-group-name" id="radio-label-2" />
+				</span>
+				<span class="label">
+					Radio label
+				</span>
+			</label>
+		</div><!-- / .form-block -->
+		
+		
+		
+	</fieldset>	
+</div><!-- / .form-block.checkbox-group --></code></pre>
+
+The radio button group contains the radio buttons within a fieldset. This means that it has a legend of its own, which is the first tab stop. When changing the 'for' attribute of the radio buttons, they only change the inputs 'ID' attribute this time. This is because the name attributes need to be the same across the group of radio buttons. Changing the name tag in the first radio button will also reflect in the second. Additional tab stops are in similar areas to seen in the input types above. The final tab stop is located after the 'form-block' of the second radio button, ready for additional radio buttons to be added as required.
+
+h3. Adding radio button inputs
+
+To add a radio button input, type radio-button[tab]
+
+This will output the following code:
+
+<pre><code><div class="form-block">
+	<label for="radio-label">
+		<span class="input">
+			<input type="radio" name="radio-group-name" id="radio-label" />
+		</span>
+		<span class="label">
+			Radio label
+		</span>
+	</label>
+</div><!-- / .form-block --></code></pre>
+
+The tab stops reflect the same as contained within the radio button group. Make sure that the 'name' attribute is typed the same as the other radio buttons within a group of radio-buttons.
