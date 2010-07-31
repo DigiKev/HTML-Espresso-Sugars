@@ -28,4 +28,4 @@ This will output the following code:
 	</fieldset>
 </form></code></pre>
 
-The form builder has various tab stops, the first in the above code selects the text 'Form legend text'. Over type what you wish to call the legend ande then press [tab]. The next available tab stop is the 'for' attribute of the label tag. Editing this will also chang the text to the same as typed in the input attributes, 'name' and 'ID'. [tab] again, and the next stop is the text region within <code><span class="label"></code>. A final [tab] brings the typing carat to the space after the 'form-block', ready to add further form elements.
+The form builder has various tab stops. The first in the above code selects the text 'Form legend text'. Over type the legend text with your own, and then press [tab]. The next available tab stop is the 'for' attribute of the label tag. Editing this will also change the text to the same as typed in the input attributes, 'name' and 'ID'. [tab] again, and the next stop is the text region within <code><span class="label"></code>. A final [tab] brings the typing carat to the space after the 'form-block', ready to add further form elements.
