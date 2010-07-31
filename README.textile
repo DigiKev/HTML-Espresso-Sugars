@@ -189,3 +189,29 @@ This will output the following code:
 </div><!-- / .form-block --></code></pre>
 
 The tab stops reflect the same as contained within the checkbox group.
+
+h3. Adding select box inputs
+
+To add a select box input, type select-group[tab]
+
+This will output the following code:
+
+<pre><code><div class="form-block">
+	<label for="select-box-label">
+		<span class="label">
+			Option label text
+		</span>
+		<span class="input">
+			<select name="select-box-label" id="select-box-label">
+				<option>Option text</option>
+				<option>Option text</option>
+				<option>Option text</option>
+				<option>Option text</option>
+				<option>Option text</option>
+			</select>
+		</span>
+	</label>
+</div><!-- / .form-block --></code></pre>
+
+Changing the tab stop on the 'for' attribute makes changes to the 'name' and 'ID' attribute. Text areas within each <code>option</code> are tab stops.
+
