@@ -127,3 +127,65 @@ This will output the following code:
 </div><!-- / .form-block --></code></pre>
 
 The tab stops reflect the same as contained within the radio button group. Make sure that the 'name' attribute is typed the same as the other radio buttons within a group of radio-buttons.
+
+h3. Adding checkbox groups
+
+To add a checkbox group, type checkbox-group[tab]
+
+This will output the following code:
+
+<pre><code><div class="form-block checkbox-group">
+	<fieldset>
+		<legend class="hide-1">Form legend text</legend>
+		
+		<span class="label">
+			Label for checkbox group
+		</span>
+		
+		<div class="form-block">
+			<label for="checkbox-label-1">
+				<span class="input">
+					<input type="checkbox" name="checkbox-group-name" id="checkbox-label-1" />
+				</span>
+				<span class="label">
+					Checkbox label
+				</span>
+			</label>
+		</div><!-- / .form-block -->
+		
+		<div class="form-block">
+			<label for="checkbox-label-2">
+				<span class="input">
+					<input type="checkbox" name="checkbox-group-name" id="checkbox-label-2" />
+				</span>
+				<span class="label">
+					Checkbox label
+				</span>
+			</label>
+		</div><!-- / .form-block -->
+		
+		
+		
+	</fieldset>	
+</div><!-- / .form-block.checkbox-group --></code></pre>
+
+The checkbox group contains the checkbox questions within a fieldset. This means that it has a legend of its own, which is the first tab stop. When changing the 'for' attribute of the radio buttons, they change the inputs 'name' and 'ID' attribute. Additional tab stops are in similar areas to seen in the input types above. The final tab stop is located after the 'form-block' of the second checkbox question, ready for additional checkbox questions to be added as required.
+
+h3. Adding checkbox inputs
+
+To add a checkbox input, type checkbox[tab]
+
+This will output the following code:
+
+<pre><code><div class="form-block">
+	<label for="checkbox-label">
+		<span class="input">
+			<input type="checkbox" name="checkbox-group-name" id="checkbox-label" />
+		</span>
+		<span class="label">
+			Checkbox label
+		</span>
+	</label>
+</div><!-- / .form-block --></code></pre>
+
+The tab stops reflect the same as contained within the checkbox group.
