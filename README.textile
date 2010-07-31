@@ -8,7 +8,7 @@ To build the foundations of the form, firstly decide whether you require a stack
 
 This will output the following code:
 
-@<form action="#" method="post" class="stacked">
+@code<form action="#" method="post" class="stacked">
 	<fieldset>
 		<legend class="hide-1">Form legend text</legend>
 		
