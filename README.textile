@@ -8,8 +8,7 @@ To build the foundations of the form, firstly decide whether you require a stack
 
 This will output the following code:
 
-<pre><code>
-<form action="#" method="post" class="stacked">
+<pre><code><form action="#" method="post" class="stacked">
 	<fieldset>
 		<legend class="hide-1">Form legend text</legend>
 		
@@ -27,5 +26,6 @@ This will output the following code:
 		
 		
 	</fieldset>
-</form>
-</code></pre>
+</form></code></pre>
+
+The form builder has various tab stops, the first in the above code selects the text 'Form legend text'. Over type what you wish to call the legend ande then press [tab]. The next available tab stop is the 'for' attribute of the label tag. Editing this will also chang the text to the same as typed in the input attributes, 'name' and 'ID'. [tab] again, and the next stop is the text region within <code><span class="label"></code>. A final [tab] brings the typing carat to the space after the 'form-block', ready to add further form elements.
