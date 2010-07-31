@@ -215,3 +215,28 @@ This will output the following code:
 
 Changing the tab stop on the 'for' attribute makes changes to the 'name' and 'ID' attribute. Text areas within each <code>option</code> are tab stops.
 
+h3. Adding a submit button
+
+To add a submit button, type submit[tab]
+
+This will output the following code:
+
+<pre><code><div class="form-block">
+	<input type="submit" value="Submit form" class="button" />
+</div><!-- / .form-block --></code></pre>
+
+The only tab stop available for the submit button is the 'value' attribute.
+
+h3. Adding helper text
+
+Helper text is text that is contained within a <code><span class="status"></code> and is used for help, error and extra information text. I use it for adding icons after the form input. The text is hidden off screen, with the <code><span class="status"></code> made block-level element with a background image of the appropriate icon.
+
+To add a helper, type helper[tab] on a new line after a <code><span class="input"></code>
+
+This will output the following code:
+
+<pre><code><span class="status">
+	
+</span><code></pre>
+
+The tab stop moves the typing carrat inside the <code><span></code> ready to type a message.
