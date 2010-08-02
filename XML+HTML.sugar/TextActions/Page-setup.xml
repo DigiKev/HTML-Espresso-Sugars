@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <action-recipes>
 
-	<snippet id="com.setup.snippets" category="hidden">
+	<snippet id="com.setup.snippets.PageSetup" category="hidden">
 		<title>Page setup</title>
 		<text><![CDATA[<div id="page">
 		
@@ -38,7 +38,7 @@
 		<text-trigger>page</text-trigger>
 	</snippet>
 		
-	<snippet id="com.navigation.snippets" category="hidden">
+	<snippet id="com.navigation.snippets.Navigation" category="hidden">
 		<title>Navigation</title>
 		<text><![CDATA[<div class="nav">
 	<ul>
