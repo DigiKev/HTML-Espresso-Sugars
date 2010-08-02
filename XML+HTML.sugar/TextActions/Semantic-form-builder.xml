@@ -3,7 +3,7 @@
 
 	<!-- Semantic form building blocks --> 
 	
-	<snippet id="com.semanticform.snippets" category="hidden">
+	<snippet id="com.semanticform.snippets.Stackedform" category="hidden">
 		<title>Stacked form</title>
 		<text><![CDATA[<form action="#" method="post" class="stacked">
 	<fieldset>
@@ -28,7 +28,7 @@
 		<text-trigger>sform</text-trigger>
 	</snippet>
 		
-	<snippet id="com.semanticform.snippets" category="hidden">
+	<snippet id="com.semanticform.snippets.LeftAlignedForm" category="hidden">
 		<title>Left-aligned form</title>
 		<text><![CDATA[<form action="#" method="post" class="left-aligned">
 	<fieldset>
@@ -53,7 +53,7 @@
 		<text-trigger>sform la</text-trigger>
 	</snippet>
 		
-	<snippet id="com.semanticform.snippets" category="hidden">
+	<snippet id="com.semanticform.snippets.RightAlignedForm" category="hidden">
 		<title>Right-aligned form</title>
 		<text><![CDATA[<form action="#" method="post" class="right-aligned">
 	<fieldset>
@@ -78,7 +78,7 @@
 		<text-trigger>sform ra</text-trigger>
 	</snippet>
 		
-	<snippet id="com.semanticform.snippets" category="hidden">
+	<snippet id="com.semanticform.snippets.TextInput" category="hidden">
 		<title>Text input</title>
 		<text><![CDATA[<div class="form-block">
 	<label for="${1:text-example}">
@@ -96,7 +96,7 @@ $0]]></text>
 		<text-trigger>text-input</text-trigger>
 	</snippet>
 		
-	<snippet id="com.semanticform.snippets" category="hidden">
+	<snippet id="com.semanticform.snippets.Textarea" category="hidden">
 		<title>Textarea</title>
 		<text><![CDATA[<div class="form-block">
 	<label for="${1:textarea-example}">
@@ -114,7 +114,7 @@ $0]]></text>
 		<text-trigger>textarea</text-trigger>
 	</snippet>
 	
-	<snippet id="com.semanticform.snippets" category="hidden">
+	<snippet id="com.semanticform.snippets.RadioGroup" category="hidden">
 		<title>Radio group</title>
 		<text><![CDATA[<div class="form-block radio-group">
 	<fieldset>
@@ -156,7 +156,7 @@ $0]]></text>
 		<text-trigger>radio-group</text-trigger>
 	</snippet>
 	
-	<snippet id="com.semanticform.snippets" category="hidden">
+	<snippet id="com.semanticform.snippets.RadioButton" category="hidden">
 		<title>Radio button</title>
 		<text><![CDATA[<div class="form-block">
 	<label for="${1:radio-label}">
@@ -174,7 +174,7 @@ $0]]></text>
 		<text-trigger>radio-button</text-trigger>
 	</snippet>
 	
-	<snippet id="com.semanticform.snippets" category="hidden">
+	<snippet id="com.semanticform.snippets.CheckboxGroup" category="hidden">
 		<title>Checkbox group</title>
 		<text><![CDATA[<div class="form-block checkbox-group">
 	<fieldset>
@@ -216,7 +216,7 @@ $0]]></text>
 		<text-trigger>checkbox-group</text-trigger>
 	</snippet>
 	
-	<snippet id="com.semanticform.snippets" category="hidden">
+	<snippet id="com.semanticform.snippets.Checkbox" category="hidden">
 		<title>Checkbox</title>
 		<text><![CDATA[<div class="form-block">
 	<label for="${1:checkbox-label}">
@@ -234,7 +234,7 @@ $0]]></text>
 		<text-trigger>checkbox</text-trigger>
 	</snippet>
 	
-	<snippet id="com.semanticform.snippets" category="hidden">
+	<snippet id="com.semanticform.snippets.SelectGroup" category="hidden">
 		<title>Select group</title>
 		<text><![CDATA[<div class="form-block">
 	<label for="${1:select-box-label}">
@@ -258,7 +258,7 @@ $0]]></text>
 		<text-trigger>select-group</text-trigger>
 	</snippet>
 		
-	<snippet id="com.semanticform.snippets" category="hidden">
+	<snippet id="com.semanticform.snippets.SubmitButton" category="hidden">
 		<title>Submit button</title>
 		<text><![CDATA[<div class="form-block">
 	<input type="submit" value="${1:Submit form}" class="button" />
@@ -267,7 +267,7 @@ $0]]></text>
 		<text-trigger>submit</text-trigger>
 	</snippet>
 	
-	<snippet id="com.semanticform.snippets" category="hidden">
+	<snippet id="com.semanticform.snippets.Helper" category="hidden">
 		<title>Helper</title>
 		<text><![CDATA[<span class="status">
 	$0
