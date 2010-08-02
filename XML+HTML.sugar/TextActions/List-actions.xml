@@ -1,35 +1,35 @@
 <?xml version="1.0"?>
 <action-recipes>
 
-	<snippet id="com.lists.snippets" category="hidden">
+	<snippet id="com.lists.snippets.UnorderedLists" category="hidden">
 		<title>Unordered list</title>
 		<text><![CDATA[<ul>
-	<li></li>
-	<li></li>
+	<li>${1:List item}</li>
+	<li>${2:List item}</li>
 </ul>]]></text>
 		<syntax-context>html, html *</syntax-context>
 		<text-trigger><![CDATA[<ul>]]></text-trigger>
 	</snippet>
 	
-	<snippet id="com.lists.snippets" category="hidden">
+	<snippet id="com.lists.snippets.OrderedLists" category="hidden">
 		<title>Ordered list</title>
 		<text><![CDATA[<ol>
-	<li></li>
-	<li></li>
+	<li>${1:List item}</li>
+	<li>${2:List item}</li>
 </ol>]]></text>
 		<syntax-context>html, html *</syntax-context>
 		<text-trigger><![CDATA[<ol>]]></text-trigger>
 	</snippet>
 	
-	<snippet id="com.lists.snippets" category="hidden">
+	<snippet id="com.lists.snippets.DefinitionLists" category="hidden">
 		<title>Definition list</title>
 		<text><![CDATA[<dl>
 
-	<dt></dt>
-	<dd></dd>
+	<dt>${1:Definition title}</dt>
+	<dd>${2:Definition description}</dd>
 	
-	<dt></dt>
-	<dd></dd>
+	<dt>${3:Definition title}</dt>
+	<dd>${4:Definition description}</dd>
 	
 </dl>]]></text>
 		<syntax-context>html, html *</syntax-context>
