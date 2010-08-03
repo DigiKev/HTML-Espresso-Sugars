@@ -275,6 +275,207 @@ $0]]></text>
 		<syntax-context>html, html *</syntax-context>
 		<text-trigger>helper</text-trigger>
 	</snippet>
+	
+	<snippet id="com.semanticform.snippets.AddressLocator" category="hidden">
+		<title>Address locator</title>
+		<text><![CDATA[<div class="form-block">
+	<label for="${1:postcode}">
+		<span class="label">
+			What is your postcode?
+		</span>
+		<span class="input">
+			<input type="text" name="$1" maxlength="8" id="$1" class="text postcode" />
+			<input type="submit" value="${2:Expand address}" class="button" />
+		</span>
+	</label>
+</div><!-- / .form-block -->
+
+<div class="form-block inactive">
+	<fieldset>
+		<legend class="hide-1">${3:Address selection}</legend>
+		
+		<span class="label">
+			${4:Select your address}
+		</span>
+		
+		<div class="select-postcode">
+			<ol>
+				<li>
+					<label for="${5:postcode-selection-01}">
+						<input type="radio" name="${6:select-postcode-group}" id="$5" /> ${7:Full address}
+					</label>
+				</li>
+				<li>
+					<label for="${8:postcode-selection-02}">
+						<input type="radio" name="$6" id="$8" /> ${9:Full address}
+					</label>
+				</li>
+				<li>
+					<label for="${10:postcode-selection-03}">
+						<input type="radio" name="$6" id="$10" /> ${11:Full address}
+					</label>
+				</li>
+				<li>
+					<label for="${12:postcode-selection-04}">
+						<input type="radio" name="$6" id="$12" /> ${13:Full address}
+					</label>
+				</li>
+			</ol>
+		</div><!-- / .select-postcode -->
+		
+	</fieldset>
+</div><!-- / .form-block -->
+
+<div class="form-block inactive">
+	<fieldset>
+		<legend class="hide-1">${14:Ensure address is correct}</legend>
+		
+		<span class="label">
+			${15:Check the output of your chosen address, editing where appropriate}
+		</span>
+		
+		<div class="form-block">
+			<label for="${16:first-line-address}">
+				<span class="label">
+					${17:First line of address}
+				</span>
+				<span class="input">
+					<input type="text" name="$16" id="$16" class="text" />
+				</span>
+			</label>
+		</div><!-- / .form-block -->
+		
+		<div class="form-block">
+			<label for="${18:second-line-address}">
+				<span class="label">
+					${19:Second line of address} <small>(optional)</small>
+				</span>
+				<span class="field">
+					<input type="text" name="$18" id="$18" class="text" />
+				</span>
+			</label>
+		</div><!-- / .form-block -->
+		
+		<div class="form-block">
+			<label for="${20:town}">
+				<span class="label">
+					${21:Town/City}
+				</span>
+				<span class="field">
+					<input type="text" name="$20" id="$20" class="text" />
+				</span>
+			</label>
+		</div><!-- / .form-block -->
+		
+	</fieldset>
+</div><!-- / .form-block -->
+
+$0]]></text>
+		<syntax-context>html, html *</syntax-context>
+		<text-trigger>address-locator</text-trigger>
+	</snippet>
+	
+	<snippet id="com.semanticform.snippets.SelectDate" category="hidden">
+		<title>Select date from select box groups</title>
+		<text><![CDATA[<div class="form-block select-date">
+	<fieldset>
+		<legend class="hide-1">${1:Date picker}</legend>
+		
+		<span class="label">
+			${2:Choose date}
+		</span>
+		
+		<div class="form-block">
+			<label for="${3:day}">
+				<span class="label">
+					${4:Day}
+				</span>
+				<span class="input">
+					<select name="$3" id="$3">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>3</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+						<option>11</option>
+						<option>12</option>
+						<option>13</option>
+						<option>14</option>
+						<option>15</option>
+						<option>16</option>
+						<option>17</option>
+						<option>18</option>
+						<option>19</option>
+						<option>20</option>
+						<option>21</option>
+						<option>22</option>
+						<option>23</option>
+						<option>24</option>
+						<option>25</option>
+						<option>26</option>
+						<option>27</option>
+						<option>28</option>
+						<option>29</option>
+						<option>30</option>
+						<option>31</option>
+					</select>
+				</span>
+			</label>
+		</div><!-- / .form-block -->
+		
+		<div class="form-block">
+			<label for="${5:month}">
+				<span class="label">
+					${6:Month}
+				</span>
+				<span class="input">
+					<select name="$5" id="$5">
+						<option>January</option>
+						<option>February</option>
+						<option>March</option>
+						<option>April</option>
+						<option>May</option>
+						<option>June</option>
+						<option>July</option>
+						<option>August</option>
+						<option>September</option>
+						<option>October</option>
+						<option>November</option>
+						<option>December</option>
+					</select>
+				</span>
+			</label>
+		</div><!-- / .form-block -->
+		
+		<div class="form-block">
+			<label for="${7:year}">
+				<span class="label">
+					${8:Year}
+				</span>
+				<span class="input">
+					<select name="$7" id="$7">
+						<option>${9:2010}</option>
+						<option>${10:2009}</option>
+						<option>${11:2008}</option>
+						<option>${12:2007}</option>
+						<option>${13:2006}</option>${14}
+					</select>
+				</span>
+			</label>
+		</div><!-- / .form-block -->
+		
+	</fieldset>
+</div><!-- / .form-block.select-date -->
+
+$0]]></text>
+		<syntax-context>html, html *</syntax-context>
+		<text-trigger>select-date</text-trigger>
+	</snippet>
 		
 	<!-- / Semantic form building blocks -->
 	
