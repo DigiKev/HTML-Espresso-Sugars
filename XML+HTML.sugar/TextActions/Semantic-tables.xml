@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<action-recipes>
+
+	<snippet id="com.semantictables.snippets.SemanticTable" category="hidden">
+		<title>Unique division container region</title>
+		<text><![CDATA[<table ${1:id="${2}"} ${3:class="${4}"} ${5:summary="${6}"}>
+	<caption>${7}</caption>
+	
+	<thead>
+		<tr>
+			<th scope="${8:col}">${9}</th>
+			<th scope="${10:col}">${11}</th>
+			<th scope="${12:col}">${13}</th>
+			<th scope="${14:col}">${15}</th>
+			${16:<th scope="${17:col}">${18}</th>}
+		</tr>
+	<thead>
+	
+	${19:<tfoot>
+		<tr>
+			<td ${20:colspan="${21}"}>${22}</td>
+		</tr>
+	</tfoot>}
+	
+	<tbody>
+		<tr>
+			<td>${23}</td>
+			<td>${24}</td>
+			<td>${25}</td>
+			<td>${26}</td>
+			${27:<td>${28}</td>}
+		</tr>
+	</tbody>
+</table>]]></text>
+		<syntax-context>html, html *</syntax-context>
+		<text-trigger><![CDATA[stable]]></text-trigger>
+	</snippet>
+			
+</action-recipes>
