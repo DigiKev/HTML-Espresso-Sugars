@@ -476,6 +476,247 @@ $0]]></text>
 		<syntax-context>html, html *</syntax-context>
 		<text-trigger>select-date</text-trigger>
 	</snippet>
+	
+	<snippet id="com.semanticform.snippets.ForgivingFormat" category="hidden">
+		<title>Forgiving format</title>
+		<text><![CDATA[<div class="form-block" role="search">
+	<fieldset>
+		<legend id="${1:locate-business}" class="hide-1">${2:Locate a business by its name, category or location}</legend>
+
+		<div class="form-block" aria-describedby="$1">
+			<label for="${3:find-format}">
+				<span class="label">
+					${4:Find}
+				</span>
+				<span class="input">
+					<input type="text" name="$3" id="$3" class="text" role="textbox" list="${5:business-category}" />
+					<datalist id="$5" role="listbox">
+						<option value="${6:business type}" role="option"></option>
+						<option value="${7:business type}" role="option"></option>
+						<option value="${8:business type}" role="option"></option>
+						<option value="${9:business type}" role="option"></option>
+						<option value="${10:business type}" role="option"></option>
+					</datalist>
+				</span>	
+				<span class="example">
+					${11:Business name or category}
+				</span>
+			</label>
+		</div><!-- / .form-block -->
+		
+		<div class="form-block" aria-describedby="$1">
+			<label for="${12:location-format}">
+				<span class="label">
+					${13:Location}
+				</span>
+				<span class="input">
+					<input type="text" name="$12" id="$12" class="text" role="textbox" />
+				</span>
+			</label>
+			
+			<span class="example">
+				${14:City/town and county or postal code}
+			</span>
+			
+			<label for="${15:default-location}">
+				<span class="input">
+					<input type="checkbox" name="$15" id="$15" role="checkbox"${16: aria-autocomplete="true"} />
+				</span>
+				<span class="label">
+					${17:Set as default location}
+				</span>
+			</label>		
+		</div><!-- / .form-block -->
+		
+		<div class="form-block">
+			<button role="button">${18:Find details}</button>
+		</div><!-- / .form-block -->
+	</fieldset>
+</div><!-- / .form-block -->
+
+$0]]></text>
+		<syntax-context>html, html *</syntax-context>
+		<text-trigger>forgiving-format</text-trigger>
+	</snippet>
+	
+	<snippet id="com.semanticform.snippets.ChangeState" category="hidden">
+		<title>Change the state of a list of items</title>
+		<text><![CDATA[<div class="form-block change-state">
+	
+	<fieldset>
+		<legend class="hide-1">${1:Controls to administer profiles, moving between active and inactive states}</legend>
+		
+		<div class="form-block checkbox-group">
+			<fieldset>
+				<legend class="hide-1">${2:Inactive profiles}</legend>
+				
+				<h3>${3:A list of inactive profiles}</h3>
+				
+				<div class="form-block">
+					<label for="${4:checkbox-label-1}">
+						<span class="input">
+							<input type="checkbox" name="$4" id="$4" />
+						</span>
+						<span class="label">
+							${5:Checkbox label}
+						</span>
+					</label>
+				</div><!-- / .form-block -->
+				
+				<div class="form-block">
+					<label for="${6:checkbox-label-2}">
+						<span class="input">
+							<input type="checkbox" name="$6" id="$6" />
+						</span>
+						<span class="label">
+							${7:Checkbox label}
+						</span>
+					</label>
+				</div><!-- / .form-block -->
+				
+				<div class="form-block">
+					<label for="${8:checkbox-label-3}">
+						<span class="input">
+							<input type="checkbox" name="$8" id="$8" />
+						</span>
+						<span class="label">
+							${9:Checkbox label}
+						</span>
+					</label>
+				</div><!-- / .form-block -->
+				
+				<div class="form-block">
+					<label for="${10:checkbox-label-4}">
+						<span class="input">
+							<input type="checkbox" name="$10" id="$10" />
+						</span>
+						<span class="label">
+							${11:Checkbox label}
+						</span>
+					</label>
+				</div><!-- / .form-block -->
+				
+				<div class="form-block">
+					<label for="${12:checkbox-label-5}">
+						<span class="input">
+							<input type="checkbox" name="$12" id="$12" />
+						</span>
+						<span class="label">
+							${13:Checkbox label}
+						</span>
+					</label>
+				</div><!-- / .form-block -->
+				
+				<div class="form-block">
+					<label for="${14:checkbox-label-6}">
+						<span class="input">
+							<input type="checkbox" name="$14" id="$14" />
+						</span>
+						<span class="label">
+							${15:Checkbox label}
+						</span>
+					</label>
+				</div><!-- / .form-block -->
+				
+				<div class="form-block">
+					<label for="${16:checkbox-label-7}">
+						<span class="input">
+							<input type="checkbox" name="$16" id="$16" />
+						</span>
+						<span class="label">
+							${17:Checkbox label}
+						</span>
+					</label>
+				</div><!-- / .form-block -->
+				
+				<div class="form-block">
+					<label for="${18:checkbox-label-8}">
+						<span class="input">
+							<input type="checkbox" name="$18" id="$18" />
+						</span>
+						<span class="label">
+							${19:Checkbox label}
+						</span>
+					</label>
+				</div><!-- / .form-block -->
+				
+				<div class="form-block">
+					<label for="${20:checkbox-label-9}">
+						<span class="input">
+							<input type="checkbox" name="$20" id="$20" />
+						</span>
+						<span class="label">
+							${21:Checkbox label}
+						</span>
+					</label>
+				</div><!-- / .form-block -->
+				
+				<div class="form-block">
+					<label for="${22:checkbox-label-10}">
+						<span class="input">
+							<input type="checkbox" name="$22" id="$22" />
+						</span>
+						<span class="label">
+							${23:Checkbox label}
+						</span>
+					</label>
+				</div><!-- / .form-block -->
+				
+			</fieldset>	
+		</div><!-- / .form-block.checkbox-group -->
+		
+		<div class="form-block switcher">
+			<fieldset>
+				<legend class="hide-1">${24:Controls}</legend>
+				
+				<p class="hide-2">${25:Once items are checked, move them between active and inactive states, using the appropriate controls below:}</p>
+				
+				<div class="form-block">
+					<button>${26:Move to active} &raquo;</button>
+					<button>&laquo; ${27:Move to inactive}</button>
+				</div><!-- / .form-block -->
+			</fieldset>
+		</div><!-- / .form-block -->
+		
+		<div class="form-block checkbox-group">
+			<fieldset>
+				<legend class="hide-1">${28:Active profiles}</legend>
+				
+				<h3>${29:A list of active profiles}</h3>
+				
+				<div class="form-block">
+					<label for="${30:checkbox-label-1}">
+						<span class="input">
+							<input type="checkbox" name="$30" id="$30" />
+						</span>
+						<span class="label">
+							${31:Checkbox label}
+						</span>
+					</label>
+				</div><!-- / .form-block -->
+				
+				<div class="form-block">
+					<label for="${32:checkbox-label-2}">
+						<span class="input">
+							<input type="checkbox" name="$32" id="$32" />
+						</span>
+						<span class="label">
+							${33:Checkbox label}
+						</span>
+					</label>
+				</div><!-- / .form-block -->
+								
+			</fieldset>	
+		</div><!-- / .form-block.checkbox-group -->
+		
+	</fieldset>
+	
+</div><!-- / .form-block.change-state -->
+
+$0]]></text>
+		<syntax-context>html, html *</syntax-context>
+		<text-trigger>change-state</text-trigger>
+	</snippet>
 		
 	<!-- / Semantic form building blocks -->
 	
