@@ -133,9 +133,7 @@ $0]]></text>
 					${5:Radio label}
 				</span>
 			</label>
-		</div><!-- / .form-block -->
-		
-		<div class="form-block">
+			
 			<label for="${6:radio-label-2}">
 				<span class="input">
 					<input type="radio" name="$4" id="$6" />
@@ -144,9 +142,9 @@ $0]]></text>
 					${7:Radio label}
 				</span>
 			</label>
+			
+			$0
 		</div><!-- / .form-block -->
-		
-		$0
 		
 	</fieldset>	
 </div><!-- / .form-block.checkbox-group -->
@@ -158,16 +156,14 @@ $0]]></text>
 	
 	<snippet id="com.semanticform.snippets.RadioButton" category="hidden">
 		<title>Radio button</title>
-		<text><![CDATA[<div class="form-block">
-	<label for="${1:radio-label}">
-		<span class="input">
-			<input type="radio" name="${2:radio-group-name}" id="$1" />
-		</span>
-		<span class="label">
-			${3:Radio label}
-		</span>
-	</label>
-</div><!-- / .form-block -->
+		<text><![CDATA[<label for="${1:radio-label}">
+	<span class="input">
+		<input type="radio" name="${2:radio-group-name}" id="$1" />
+	</span>
+	<span class="label">
+		${3:Radio label}
+	</span>
+</label>
 
 $0]]></text>
 		<syntax-context>html, html *</syntax-context>
@@ -193,9 +189,7 @@ $0]]></text>
 					${4:Checkbox label}
 				</span>
 			</label>
-		</div><!-- / .form-block -->
-		
-		<div class="form-block">
+
 			<label for="${5:checkbox-label-2}">
 				<span class="input">
 					<input type="checkbox" name="$5" id="$5" />
@@ -204,9 +198,9 @@ $0]]></text>
 					${6:Checkbox label}
 				</span>
 			</label>
+			
+			$0
 		</div><!-- / .form-block -->
-		
-		$0
 		
 	</fieldset>	
 </div><!-- / .form-block.checkbox-group -->
@@ -214,6 +208,22 @@ $0]]></text>
 ]]></text>
 		<syntax-context>html, html *</syntax-context>
 		<text-trigger>checkbox-group</text-trigger>
+	</snippet>
+
+	<snippet id="com.semanticform.snippets.SingleCheckbox" category="hidden">
+		<title>Single checkbox</title>
+		<text><![CDATA[<label for="${1:checkbox-label}">
+	<span class="input">
+		<input type="checkbox" name="$1" id="$1" />
+	</span>
+	<span class="label">
+		${2:Checkbox label}
+	</span>
+</label>
+
+$0]]></text>
+		<syntax-context>html, html *</syntax-context>
+		<text-trigger>single-checkbox</text-trigger>
 	</snippet>
 	
 	<snippet id="com.semanticform.snippets.Checkbox" category="hidden">
@@ -426,9 +436,7 @@ $0]]></text>
 					</select>
 				</span>
 			</label>
-		</div><!-- / .form-block -->
-		
-		<div class="form-block">
+			
 			<label for="${5:month}">
 				<span class="label">
 					${6:Month}
@@ -450,9 +458,7 @@ $0]]></text>
 					</select>
 				</span>
 			</label>
-		</div><!-- / .form-block -->
-		
-		<div class="form-block">
+			
 			<label for="${7:year}">
 				<span class="label">
 					${8:Year}
@@ -561,9 +567,7 @@ $0]]></text>
 							${5:Checkbox label}
 						</span>
 					</label>
-				</div><!-- / .form-block -->
-				
-				<div class="form-block">
+					
 					<label for="${6:checkbox-label-2}">
 						<span class="input">
 							<input type="checkbox" name="$6" id="$6" />
@@ -572,9 +576,7 @@ $0]]></text>
 							${7:Checkbox label}
 						</span>
 					</label>
-				</div><!-- / .form-block -->
-				
-				<div class="form-block">
+					
 					<label for="${8:checkbox-label-3}">
 						<span class="input">
 							<input type="checkbox" name="$8" id="$8" />
@@ -583,9 +585,7 @@ $0]]></text>
 							${9:Checkbox label}
 						</span>
 					</label>
-				</div><!-- / .form-block -->
-				
-				<div class="form-block">
+					
 					<label for="${10:checkbox-label-4}">
 						<span class="input">
 							<input type="checkbox" name="$10" id="$10" />
@@ -594,9 +594,7 @@ $0]]></text>
 							${11:Checkbox label}
 						</span>
 					</label>
-				</div><!-- / .form-block -->
-				
-				<div class="form-block">
+					
 					<label for="${12:checkbox-label-5}">
 						<span class="input">
 							<input type="checkbox" name="$12" id="$12" />
@@ -605,9 +603,7 @@ $0]]></text>
 							${13:Checkbox label}
 						</span>
 					</label>
-				</div><!-- / .form-block -->
-				
-				<div class="form-block">
+					
 					<label for="${14:checkbox-label-6}">
 						<span class="input">
 							<input type="checkbox" name="$14" id="$14" />
@@ -616,9 +612,7 @@ $0]]></text>
 							${15:Checkbox label}
 						</span>
 					</label>
-				</div><!-- / .form-block -->
-				
-				<div class="form-block">
+					
 					<label for="${16:checkbox-label-7}">
 						<span class="input">
 							<input type="checkbox" name="$16" id="$16" />
@@ -627,9 +621,7 @@ $0]]></text>
 							${17:Checkbox label}
 						</span>
 					</label>
-				</div><!-- / .form-block -->
-				
-				<div class="form-block">
+					
 					<label for="${18:checkbox-label-8}">
 						<span class="input">
 							<input type="checkbox" name="$18" id="$18" />
@@ -638,9 +630,7 @@ $0]]></text>
 							${19:Checkbox label}
 						</span>
 					</label>
-				</div><!-- / .form-block -->
-				
-				<div class="form-block">
+					
 					<label for="${20:checkbox-label-9}">
 						<span class="input">
 							<input type="checkbox" name="$20" id="$20" />
@@ -649,9 +639,7 @@ $0]]></text>
 							${21:Checkbox label}
 						</span>
 					</label>
-				</div><!-- / .form-block -->
-				
-				<div class="form-block">
+					
 					<label for="${22:checkbox-label-10}">
 						<span class="input">
 							<input type="checkbox" name="$22" id="$22" />
@@ -693,9 +681,7 @@ $0]]></text>
 							${31:Checkbox label}
 						</span>
 					</label>
-				</div><!-- / .form-block -->
-				
-				<div class="form-block">
+					
 					<label for="${32:checkbox-label-2}">
 						<span class="input">
 							<input type="checkbox" name="$32" id="$32" />
